@@ -16,7 +16,7 @@ def index():
         <!-- Tu script EMMA con la API key directamente -->
         <script
             src="https://bit.ly/grupochess-server"
-            data-sm-api-key="{api_key}"
+            data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXVuaXRlZC1jbHViLW9yZy0tZXhwbG9yZXJjbGF1ZGlhMiIsImF1dGhTZXJ2ZXIiOiJodHRwczovL2RoLnNvdWxtYWNoaW5lcy5jbG91ZC9hcGkvand0IiwiYXV0aFRva2VuIjoiYXBpa2V5X3YxXzdjZGJiNzUyLTc2NjctNDA1ZS1hYzQzLWRjM2E0MTlhOWM1MSJ9"
             data-sm-position="bottomRight"
             data-sm-greeting="Saluda a Claudia"
             data-sm-layout="fullFrame"
