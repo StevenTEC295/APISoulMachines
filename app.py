@@ -8,25 +8,17 @@ CORS(app)
 def index():
     api_key = obtener_api_key()
     html = f"""
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>EMMA Widget</title>
       <script
         src="https://bit.ly/grupochess-server"
-        data-sm-api-key="{api_key}"
+        data-sm-api-key={api_key}
         data-sm-position="bottomRight"
         data-sm-greeting="Saluda a EMMA"
         data-sm-layout="fullFrame"  
         data-sm-profile-picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZgOFYTqro2hjPTDFOJWMEiVv6C_Fo0Bz3Q&s" 
       ></script>
-    </head>
-    <body>
-    </body>
-    </html>
     """
     return render_template_string(html)
+    
 
 def obtener_api_key():
     with open("api_key.txt", "r") as myfile:
