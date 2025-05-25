@@ -29,7 +29,7 @@ def index():
     </body>
     </html>
     """
-    return html
+    return render_template_string(html)
 
 def obtener_api_key():
     with open("api_key.txt", "r") as myfile:
