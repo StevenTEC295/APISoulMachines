@@ -9,13 +9,13 @@ def index():
     api_key = obtener_api_key()
     html = f"""
       <script
-        src="https://bit.ly/grupochess-server"
-        data-sm-api-key={api_key}
-        data-sm-position="bottomRight"
-        data-sm-greeting="Saluda a EMMA"
-        data-sm-layout="fullFrame"  
-        data-sm-profile-picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZgOFYTqro2hjPTDFOJWMEiVv6C_Fo0Bz3Q&s" 
-      ></script>
+   src="https://bit.ly/grupochess-server"
+   data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXVuaXRlZC1jbHViLW9yZy0tZXhwbG9yZXJjbGF1ZGlhMiIsImF1dGhTZXJ2ZXIiOiJodHRwczovL2RoLnNvdWxtYWNoaW5lcy5jbG91ZC9hcGkvand0IiwiYXV0aFRva2VuIjoiYXBpa2V5X3YxXzdjZGJiNzUyLTc2NjctNDA1ZS1hYzQzLWRjM2E0MTlhOWM1MSJ9"
+   data-sm-position="bottomRight"
+   data-sm-greeting="Saluda a Claudia"
+   data-sm-layout="fullFrame"  
+   data-sm-profile-picture="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd296cnUxYmx4MDE3eGxodzk0Y29iZXJiZzBseG96ZHJmZ294ZnFncSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ts9N22K8Jz7GURYmNd/giphy.gif" 
+ ></script>
     """
     return render_template_string(html)
     
