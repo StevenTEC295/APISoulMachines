@@ -10,9 +10,6 @@ CORS(app)  # Permite peticiones desde otros orígenes (útil para frontends sepa
 def index():
     api_key = obtener_api_key()
     html = f"""
-    <html>
-    <head><title>Widget con EMMA</title></head>
-    <body>
       <script
         src="https://bit.ly/grupochess-server"
         data-sm-api-key="{api_key}"
@@ -21,8 +18,6 @@ def index():
         data-sm-layout="fullFrame"
         data-sm-profile-picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZgOFYTqro2hjPTDFOJWMEiVv6C_Fo0Bz3Q&s"
       ></script>
-    </body>
-    </html>
     """
     return render_template_string(html)
 
